@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -72,7 +72,7 @@
             display-name = "Fn";
             bindings = <
 &kp F1  &kp F2  &kp F3            &kp F4  &kp F5          &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8          &kp F9          &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans            &trans  &trans          &trans  &none                                       &none   &trans  &trans          &kp UP_ARROW    &trans     &trans   &trans
+&trans  &trans  &kp LEFT_ALT      &trans  &kp TAB         &trans  &none                                       &none   &trans  &trans          &kp UP_ARROW    &trans     &trans   &trans
 &trans  &trans  &kp LEFT_CONTROL  &trans  &kp LEFT_SHIFT  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans   &trans
 &trans  &trans  &trans            &trans  &trans          &trans                  &trans      &trans                  &trans  &trans          &trans          &trans     &trans   &trans
 &trans  &trans  &trans            &trans  &trans                  &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans     &trans   &trans
